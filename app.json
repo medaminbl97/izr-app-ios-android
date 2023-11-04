@@ -1,0 +1,73 @@
+{
+  "expo": {
+    "name": "IZR",
+    "slug": "izrApp",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./app/assets/appicon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./app/assets/logo-no-text.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff",
+      "android": {
+        "config": {
+          "networkSecurity": {
+            "clearText": true
+          }
+        }
+      }
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.aminbl.izrApp",
+      "useFrameworks": "static",
+      "buildNumber": "6",
+      "googleServicesFile": "./GoogleService-Info.plist"
+    },
+    "notification": {
+      "icon": "./app/assets/ic_stat_logo_fblanc_512_large.png",
+      "color": "#0f3301"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/appicon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "NOTIFICATIONS"
+      ],
+      "package": "com.aminbl.izrApp",
+      "versionCode": 2
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "eae92e18-90f8-4d7f-a779-f17e484d1614"
+      },
+      "bugsnag": {
+        "apiKey": "f9f585103364ae23ef7bd83b16a0648e"
+      }
+    },
+    "plugins": [
+      "@bugsnag/plugin-expo-eas-sourcemaps",
+      "@react-native-firebase/app",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ]
+  }
+}
